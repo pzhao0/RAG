@@ -197,8 +197,8 @@ configure-pipeline:
   aws-compatible-storage:
     fullnameOverride: aws-compatible-storage
     s3:
-      accessKeyId: s4admin
-      secretAccessKey: s4secret
+      accessKeyId: storageadmin
+      secretAccessKey: storagepassword
     auth:
       enabled: false
     route:
@@ -268,7 +268,7 @@ ingestion-pipeline:
   fullnameOverride: ingestion-pipeline
   serviceAccount:
     create: true
-    name: rag-ingestion-pipeline
+    name: rag-pipeline-notebook
   pipelines:
     # GitHub-based pipeline
     hr-pipeline:
